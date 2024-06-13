@@ -25,7 +25,7 @@ function remove (id) {
   return destroy(`restaurants/${id}`)
 }
 
-// Solution
+//  Solution
 function togglePinned (id) {
   return patch(`restaurants/${id}/togglePinned`)
 }

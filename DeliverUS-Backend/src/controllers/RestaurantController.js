@@ -21,7 +21,7 @@ const index = async function (req, res) {
     res.status(500).send(err)
   }
 }
-// Solution
+//  Solution
 async function _getNotPinnedRestaurants (req) {
   return await Restaurant.findAll({
     attributes: { exclude: ['userId'] },

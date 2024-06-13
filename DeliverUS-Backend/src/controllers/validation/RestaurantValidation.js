@@ -14,7 +14,7 @@ const create = [
   check('restaurantCategoryId').exists({ checkNull: true }).isInt({ min: 1 }).toInt(),
   check('userId').not().exists(),
 
-  // Solution
+  //  Solution
   check('pinned').optional().isBoolean().toBoolean(),
 
   check('heroImage').custom((value, { req }) => {

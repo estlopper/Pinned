@@ -20,7 +20,7 @@ export default function CreateRestaurantScreen ({ navigation }) {
   const [restaurantCategories, setRestaurantCategories] = useState([])
   const [backendErrors, setBackendErrors] = useState()
 
-  // Solution ( pinned:false )
+  //  Solution ( pinned:false )
   const initialRestaurantValues = { name: null, description: null, address: null, postalCode: null, url: null, shippingCosts: null, email: null, phone: null, restaurantCategoryId: null, pinned: false }
   const validationSchema = yup.object().shape({
     name: yup
